@@ -43,9 +43,9 @@
   
         const view = new MapView({
           map: map,
-          center: [-74.051, 4.673], // Longitude, latitude
-          zoom: 18, // Zoom level
-          container: "viewDiv" // Div element
+          center: [-74.051, 4.673],
+          zoom: 18,
+          container: "viewDiv"
         });
   
         const updateBasemapStyle = (basemapId) => {
@@ -59,8 +59,7 @@
         styleCombobox.addEventListener("calciteComboboxChange", (event) => {
           updateBasemapStyle(event.target.value);
         });
-  
-      });
+    });
     </script>
   </head>
   

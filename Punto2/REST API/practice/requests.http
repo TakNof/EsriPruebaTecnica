@@ -1,0 +1,23 @@
+GET http://localhost:3001 HTTP/1.1
+###
+GET http://localhost:3001/books HTTP/1.1
+###
+GET http://localhost:3001/books/1 HTTP/1.1
+###
+POST http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "100 años de soledad",
+    "author": "Gabriel García Márquez",
+    "year": 1966
+}
+###
+PUT http://localhost:3001/books/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "year": 1967
+}
+###
+DELETE http://localhost:3001/books/5 HTTP/1.1
